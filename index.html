@@ -15,16 +15,18 @@
   </head>
   <body>
     <header>
-      <a href="#" title="WebStudio logo" class="logo">
+      <a href="#" title="WebStudio logo" class="logo logo--black">
         <span>Web</span>Studio
       </a>
       <nav class="nav">
         <ul class="nav__links">
           <li class="nav__links-item">
-            <a href="#" title="Cтудия" class="nav__link">Cтудия</a>
+            <a href="./index.html" title="Cтудия" class="nav__link">Cтудия</a>
           </li>
           <li class="nav__links-item">
-            <a href="#" title="Портфолио" class="nav__link">Портфолио</a>
+            <a href="./pages/portfolio.html" title="Портфолио" class="nav__link"
+              >Портфолио</a
+            >
           </li>
           <li class="nav__links-item">
             <a href="#" title="Контакты" class="nav__link">Контакты</a>
@@ -45,14 +47,14 @@
       </nav>
     </header>
     <main>
-      <section class="section hero">
+      <section class="hero">
         <h1 class="hero__heading heading-primary">
           Эффективные решения для вашего бизнеса
         </h1>
         <button type="button" class="hero__btn">Заказать услугу</button>
       </section>
       <section class="section advantages">
-        <h2 class="advantages__heading heading-secondary">Наши преимущества</h2>
+        <h2 class="advantages__heading section-heading">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantage">
             <h3 class="advantage__heading heading-tertiaty">
@@ -88,16 +90,14 @@
           </li>
         </ul>
       </section>
-      <section class="section gallery">
-        <h2 class="gallery__heading heading-secondary">Чем мы занимаемся</h2>
+      <section class="gallery">
+        <h2 class="gallery__heading section-heading">Чем мы занимаемся</h2>
         <ul class="gallery__list">
           <li class="gallery__item">
             <img
               src="./images/gallery-photo-1.jpg"
               alt="occupation image"
               class="gallery__image"
-              width="370"
-              height="294"
             />
           </li>
           <li class="gallery__item">
@@ -105,8 +105,6 @@
               src="./images/gallery-photo-2.jpg"
               alt="occupation image"
               class="gallery__image"
-              width="370"
-              height="294"
             />
           </li>
           <li class="gallery__item">
@@ -114,22 +112,18 @@
               src="./images/gallery-photo-3.jpg"
               alt="occupation image"
               class="gallery__image"
-              width="370"
-              height="294"
             />
           </li>
         </ul>
       </section>
-      <section class="section team">
-        <h2 class="team__heading heading-secondary">Наша команда</h2>
+      <section class="team">
+        <h2 class="team__heading section-heading">Наша команда</h2>
         <ul class="team__list">
-          <li class="team__item member">
+          <li class="team__member member">
             <img
               src="./images/team-4.jpg"
               alt="Team member photo"
               class="member__photo"
-              width="270"
-              height="260"
             />
             <h3 class="member__name heading-tertiaty">Игорь Демьяненко</h3>
             <p class="member__position">Product Designer</p>
@@ -139,8 +133,6 @@
               src="./images/team-3.jpg"
               alt="Team member photo"
               class="member__photo"
-              width="270"
-              height="260"
             />
             <h3 class="member__name heading-tertiaty">Ольга Репина</h3>
             <p class="member__position">Frontend Developer</p>
@@ -150,8 +142,6 @@
               src="./images/team-2.jpg"
               alt="Team member photo"
               class="member__photo"
-              width="270"
-              height="260"
             />
             <h3 class="member__name heading-tertiaty">Николай Тарасов</h3>
             <p class="member__position">Marketing</p>
@@ -161,8 +151,6 @@
               src="./images/team-1.jpg"
               alt="Team member photo"
               class="member__photo"
-              width="270"
-              height="260"
             />
             <h3 class="member__name heading-tertiaty">Михаил Ермаков</h3>
             <p class="member__position">UI Designer</p>
@@ -170,8 +158,13 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <a href="#" target="blank" title="WebStudio logo" class="logo">
+    <footer>
+      <a
+        href="#"
+        target="_blank"
+        title="WebStudio logo"
+        class="footer__logo logo logo--white"
+      >
         <span>Web</span>Studio
       </a>
       <address class="footer__address address">
