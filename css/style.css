@@ -278,6 +278,9 @@ footer {
   background-color: var(--color-primary);
   color: var(--color-btn-text-light);
 }
+.portfolio__heading {
+  display: none;
+}
 
 .projects {
   list-style: none;
