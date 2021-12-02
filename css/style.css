@@ -1,13 +1,20 @@
 :root {
   --color-primary: #2196f3;
   --color-primary-hover: #2283d3;
-  --color-heading: #212121;
+  --color-heading-dark: #212121;
+  --color-heading-light: #fff;
   --color-paragraph: #757575;
-  --color-white: #fff;
+  --color-paragraph-light: #fff;
+  --color-btn-text-light: #fff;
+  --color-btn-text-dark: #212121;
+  --color-project-bc: #fff;
   --color-hero-bc: #2f303a;
   --color-footer-bc: #2f303a;
   --color-team-bc: #f5f4fa;
+  --color-team-member-bc: #fff;
   --color-project-border: #eeeeee;
+  --color-logo-light: #fff;
+  --color-logo-dark: #212121;
 }
 
 html {
@@ -25,6 +32,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--color-heading-dark);
 }
 
 .logo:link,
@@ -40,11 +48,11 @@ body {
 }
 
 .logo--white {
-  color: var(--color-white);
+  color: var(--color-logo-light);
 }
 
 .logo--black {
-  color: var(--color-heading);
+  color: var(--color-logo-dark);
 }
 
 .nav__links {
@@ -57,7 +65,7 @@ body {
   font-weight: 500;
   line-height: 1.17;
   text-decoration: none;
-  color: var(--color-heading);
+  color: var(--color-heading-dark);
   transition: color 0.2s ease;
 }
 
@@ -94,7 +102,7 @@ footer {
 .address__location {
   font-size: 1.4rem;
   line-height: 1.7;
-  color: var(--color-white);
+  color: var(--color-paragraph-light);
   font-style: normal;
 }
 
@@ -128,14 +136,14 @@ footer {
   line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-heading-light);
 }
 
 .hero__btn {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.875;
-  color: var(--color-white);
+  color: var(--color-btn-text-light);
   padding: 1rem 3.2rem;
   font-family: inherit;
   border: none;
@@ -159,7 +167,7 @@ footer {
   line-height: 1.17;
   font-weight: 700;
   text-align: center;
-  color: var(--color-heading);
+  color: var(--color-heading-dark);
 }
 
 .advantage__heading {
@@ -167,7 +175,7 @@ footer {
   line-height: 1.17;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--color-heading);
+  color: var(--color-heading-dark);
 }
 
 .advantages__list {
@@ -209,7 +217,7 @@ footer {
 
 .member {
   display: inline-block;
-  background-color: var(--color-white);
+  background-color: var(--color-team-member-bc);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -225,7 +233,7 @@ footer {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--color-heading);
+  color: var(--color-heading-dark);
 }
 
 .member__position {
@@ -251,7 +259,7 @@ footer {
   background-color: var(--color-team-bc);
   font-weight: 500;
   font-size: 1.6rem;
-  color: var(--color-heading);
+  color: var(--color-btn-text-dark);
   padding: 6px 2.2rem;
   border-radius: 4px;
   cursor: pointer;
@@ -259,7 +267,8 @@ footer {
     box-shadow 0.2s ease;
 }
 
-.filter__button:hover {
+.filter__button:hover,
+.filter__button:focus-visible {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   transform: translateY(-1px);
@@ -267,16 +276,16 @@ footer {
 
 .filter__button--active {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-btn-text-light);
 }
 
-.portfolio {
+.projects {
   list-style: none;
 }
 
-.portfolio__item {
+.projects__item {
   display: inline-block;
-  background-color: var(--color-white);
+  background-color: var(--color-project-bc);
   border: 1px solid var(--color-project-border);
 }
 
@@ -288,7 +297,7 @@ footer {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2;
-  color: var(--color-heading);
+  color: var(--color-heading-dark);
 }
 
 .project__category {
